@@ -108,7 +108,7 @@ a.login-but:hover {
   width: 100%;
   height: 61%;
   display: grid;
-  padding: 0px 20px;
+  padding: 0px 30px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "left right";
@@ -252,14 +252,176 @@ a.login-but:hover {
   background-color: white;
   border-radius: 50%;
   padding: 10px;
+  font-weight: 600;
 }
 .content-right .bottom .name {
   font-size: 16px;
   color: black;
-  font-weight: 500;
+  font-weight: 590;
   font-family: visual-reg;
   width: fit-content;
   background-color: white;
   padding: 8px 15px;
   border-radius: 40px;
+}
+.banner {
+  height: 8.5%;
+  max-width: 85%;
+  margin: auto;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 0px 0px 0px 10px;
+}
+.box {
+  height: 60%;
+  width: 18%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 0px 15px;
+}
+.box p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: visual-reg;
+}
+.box .icon i {
+  font-size: 25px;
+  margin-right: 5px;
+  color: transparent;
+  background: linear-gradient(purple, rgb(169, 168, 168));
+  background-clip: text;
+}
+.smallbox {
+  font-size: 12px;
+  width: 45px;
+  padding: 3px 10px;
+  background-color: rgb(236, 94, 149);
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 16.5%;
+}
+.banner > p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: mona;
+  margin-left: 30px;
+  color: rgb(58, 53, 70);
+}
+.banner2 {
+  height: 8.5%;
+  max-width: 85%;
+  margin: auto;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.banner2 .button1 {
+  height: 60%;
+  width: 10%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding: 0px 15px;
+  border: 1px solid rgb(200, 199, 199);
+}
+.banner2 .button2 {
+  height: 60%;
+  width: 10%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  padding: 0px 15px;
+  border: 1px solid rgb(200, 199, 199);
+}
+.button1 button {
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: visual-reg;
+}
+.button2 button {
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: visual-reg;
+}
+.grid-section{
+  width: 100%;
+  height: 1275px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 30px;
+  grid-template-rows: repeat(4,300px);
+}
+.grid-section .card{
+  background-color: rgb(213, 213, 93);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.card video,img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.grid-section .card .bottom{
+  width: 100%;
+  height: 20%;
+  border-radius: 15px;
+  background: linear-gradient(transparent, rgba(75, 74, 74, 0.495));
+  position: absolute;
+  bottom: -20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  color: white;
+}
+.card .bottom .icon i {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  width: fit-content;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-weight: 400;
+}
+.card .bottom .icon-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-section .card:hover .bottom{
+  bottom: 0;
+  transition: all 0.4s ease-in-out;
 }
